@@ -24,7 +24,7 @@ jobs:
 
 
       - name: Build with Gradle
-        run: ./gestion-productos/gradle clean build
+        run: ./gestion-productos/gradlew clean build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
