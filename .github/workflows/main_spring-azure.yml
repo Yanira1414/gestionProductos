@@ -24,7 +24,7 @@ jobs:
 
 
       - name: Build with Gradle
-        run: ./gestion-productos/gradle/wrapple/gradle-wrapper.properties clean build
+        run: ./gestion-productos/gradle/wrapple clean build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
