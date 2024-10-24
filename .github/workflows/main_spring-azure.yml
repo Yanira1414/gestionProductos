@@ -22,11 +22,6 @@ jobs:
           java-version: '17'
           distribution: 'microsoft'
 
-      - name: List directory contents
-        run: ls -la gestion-productos  # Para verificar la estructura del directorio
-
-      - name: Give execution permission to gradlew
-        run: chmod +x gestion-productos/gradlew
 
       - name: Build with Gradle
         run: ./gestion-productos/gradlew clean build
